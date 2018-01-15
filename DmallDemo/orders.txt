@@ -1,0 +1,9 @@
+31ea9c53-019c-4588-9330-8cb169c356bf,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-14T20:56:50.436834200+08:00[Asia/Shanghai],Ini
+31ea9c53-019c-4588-9330-8cb169c356bf,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-14T20:56:50.436834200+08:00[Asia/Shanghai],8817a089-117e-429c-aec9-677462c47d27,Alipay,Paied
+31ea9c53-019c-4588-9330-8cb169c356bf,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-14T20:56:50.436834200+08:00[Asia/Shanghai],8817a089-117e-429c-aec9-677462c47d27,Alipay,Deliveried
+460b3353-8b95-4718-90a7-8bd151995f8a,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-14T20:58:14.440462400+08:00[Asia/Shanghai],Ini
+460b3353-8b95-4718-90a7-8bd151995f8a,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-14T20:58:14.440462400+08:00[Asia/Shanghai],763bf18c-840d-4d7f-970c-602116a93c1a,Alipay,Paied
+460b3353-8b95-4718-90a7-8bd151995f8a,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-14T20:58:14.440462400+08:00[Asia/Shanghai],763bf18c-840d-4d7f-970c-602116a93c1a,Alipay,Deliveried
+cff90bfb-d0c7-422f-aa4c-4a6b00c2b081,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-15T09:40:21.243875800+08:00[Asia/Shanghai],Ini
+cff90bfb-d0c7-422f-aa4c-4a6b00c2b081,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-15T09:40:21.243875800+08:00[Asia/Shanghai],dc11f39b-fc6b-4cfb-b978-9f882bc562fb,Alipay,Paied
+cff90bfb-d0c7-422f-aa4c-4a6b00c2b081,1,Joy,Jxj,China,Shanghai,Shanghai,Pudong,Zhangdong,1588,110,领域驱动设计,89.8,人民币,2,2,EMS,2018-01-15T09:40:21.243875800+08:00[Asia/Shanghai],dc11f39b-fc6b-4cfb-b978-9f882bc562fb,Alipay,Deliveried
