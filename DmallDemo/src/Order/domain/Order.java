@@ -1,6 +1,7 @@
 package Order.domain;
 
 import Order.event.DeliveryEvent;
+import Order.event.ModifyOrderEvent;
 import Order.event.PaymentEvent;
 
 import java.io.Serializable;
@@ -124,5 +125,9 @@ public class Order {
 
     public void onDelivery(DeliveryEvent deliveryEvent) {
         this.orderStatus = OrderStatus.Deliveried;
+    }
+
+    public void onModifyCargo(ModifyOrderEvent modifyOrderEvent) {
+        this.cargoReceiver.setAddress(modifyOrderEvent.getAddress());
     }
 }

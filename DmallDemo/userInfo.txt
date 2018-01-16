@@ -1,0 +1,4 @@
+1000,lyh,3776,Male,China,Shanghai,Shanghai,Pudong,Zhangdong,1588
+1000,lyh,3776,Male,China,Shanghai,Shanghai,Pudong,Zhangdong,1588
+1000,lyh,3776,Male,China,Shanghai,Shanghai,Pudong,Xiangnan,39
+1000,lyh,3776,Male,China,Shanghai,Shanghai,Pudong,Xiangnan,39

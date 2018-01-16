@@ -19,6 +19,10 @@ public class CargoReceiver {
         return address;
     }
 
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     public int getTelnumber() {
         return telnumber;
     }

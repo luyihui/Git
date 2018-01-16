@@ -1,16 +1,14 @@
-package Order.repository;
+package User.repository;
 
-import Order.domain.Order;
-import Order.domain.OrderStatus;
-import repository.OrderRepository;
+import User.domain.User;
+import repository.UserRepository;
 
 import java.io.*;
-import java.util.UUID;
 
-public class OrderRepositoryFileImp implements OrderRepository{
-    File filename = new File("C:/Users/luyih/IdeaProjects/DmallDemo/orders.txt");
+public class UserRepositoryFileImp implements UserRepository {
+    File filename = new File("C:/Users/luyih/IdeaProjects/DmallDemo/userInfo.txt");
     @Override
-    public void SaveOrder(Order o){
+    public void SaveUser(User user) {
         if(!filename.exists()){
             try {
                 filename.createNewFile();
@@ -18,10 +16,11 @@ public class OrderRepositoryFileImp implements OrderRepository{
                 e.printStackTrace();
             }
         }
-        String orderoutput = o.toString()+"\r\n";
+        String useroutput = user.toString()+"\r\n";
+        //System.out.println(useroutput);
         try {
             FileOutputStream fos = new FileOutputStream(filename,true);
-            fos.write(orderoutput.getBytes());
+            fos.write(useroutput.getBytes());
             fos.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -29,7 +28,7 @@ public class OrderRepositoryFileImp implements OrderRepository{
     }
 
     @Override
-    public Order QueryOrder(UUID Id, OrderStatus orderStatus) {
+    public User QueryUser(int UserId) {
         try {
             FileInputStream in = new FileInputStream(filename);
             InputStreamReader inReader = new InputStreamReader(in, "UTF-8");
@@ -37,7 +36,7 @@ public class OrderRepositoryFileImp implements OrderRepository{
             String output = null;
             int i = 1;
             while((output = bufReader.readLine()) != null){
-                if(output.contains(Id.toString()) && output.contains(orderStatus.toString())){
+                if(output.contains(String.valueOf(UserId))){
                     break;
                 }
                 i++;
@@ -45,11 +44,8 @@ public class OrderRepositoryFileImp implements OrderRepository{
             bufReader.close();
             inReader.close();
             in.close();
-            if (output !=null){
-                Order o = new Order(output);
-                return o;
-            }
-            else return null;
+            User o = new User(output);
+            return o;
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("读取" + filename + "出错！");

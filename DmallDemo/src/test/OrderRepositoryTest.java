@@ -1,10 +1,8 @@
 package test;
 
-import Order.domain.Order;
-import Order.domain.Payment;
-import Order.domain.PaymentMethod;
-import Order.domain.Price;
+import Order.domain.*;
 import Order.event.DeliveryEvent;
+import Order.event.ModifyOrderEvent;
 import Order.event.PaymentEvent;
 import Order.repository.DeliveryEventRepositoryFileImp;
 import Order.repository.OrderRepositoryFileImp;
@@ -60,5 +58,10 @@ public class OrderRepositoryTest {
         //test DeliveryEvent repository
         DeliveryEventRepositoryFileImp deliveryEventRepositoryFileImp = new DeliveryEventRepositoryFileImp();
         deliveryEventRepositoryFileImp.SaveDeliveryEvent(deliveryEvent);
+
+        //test modify address info
+        Address address = new Address("China","Shanghai","Shanghai","Pudong","Xiangnan","39");
+        ModifyOrderEvent modifyOrderEvent = new ModifyOrderEvent(1000,newOrder.getId(),address,ZonedDateTime.now());
+        orderservice.onModifyCargoInfo(modifyOrderEvent);
     }
 }

@@ -1,6 +1,8 @@
 package Order.domain;
 
-public class Address {
+import java.io.Serializable;
+
+public class Address implements Serializable {
     private final String Country;
     private final String Province;
     private final String City;
